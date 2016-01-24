@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+</head>
+<body>
+	<script>
+		var sueldo;
+		var anos;
+		var aumento;
+		var sueldofinal;
+		
+		sueldo =prompt('Ingresa la cantidad de sueldo mensual' , '');
+		anos =prompt('¿Cuantos años tienes trabajando en la compañia?' , '');
+		sueldo =parseInt(sueldo);
+		anos =parseInt(anos);
+		aumento = sueldo * 0.20;
+		sueldofinal = aumento + sueldo;
+
+		
+		if (sueldo>=500)
+		{
+			document.write(' Tu sueldo es: ' + sueldo);
+		}
+		
+		else if (sueldo<=500 && anos>=10)
+		{
+			document.write(' Se te ah aumentado un 20% ahora ganaras: ' + sueldofinal);
+		}
+		
+		else if (sueldo<=500 && anos<10)
+		{
+			aumento = sueldo * 0.05;
+			sueldofinal = aumento + sueldo;
+			document.write(' Se te ah aumentado un 5% ahora ganaras: ' + sueldofinal);
+		}
+
+	</script>
+</body>
+</html>

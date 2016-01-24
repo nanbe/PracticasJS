@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>operaciones con condisionales</title>
+</head>
+<body>
+	<!--
+Relizar un progrma que lea por telcado 2 numeros, si el primero es mayor al segundo
+informar su suma y diferencias, en caso contrario informar el producto y la división
+del primero respecto al segundo
+-->
+	<script>
+		var num1;
+		var num2;
+		var suma;
+		var resta;
+		var producto;
+		var division;
+		
+		num1 = prompt('Ingresa un número' , '');
+		num1 = parseInt(num1);
+		num2 = prompt('Ingresa otro número' , '');
+		num2 = parseInt(num2);
+		
+		suma = num1+num2;
+		resta = num1-num2;
+		producto = num1*num2;
+		division = num1/num2;
+		
+		//Si numero 1 es mayor a numero 2 mostrar el resultado de su suma y su resta.
+		if (num1>num2)
+		{
+			document.write(' El resultado de la suma de ambos es: ' + suma);
+			document.write(' El resultado de la resta de ambos es: ' + resta);
+		}
+		
+		//Si numero 1 es menor a numero 2 mostrar el resultado de su producto y su división.
+		else (num1<num2)
+		{
+			document.write(' El resultado del producto de ambos es: ' + producto);
+			document.write(' El resultado de la división de ambos es: ' + division);
+		}
+	</script>
+</body>
+</html>

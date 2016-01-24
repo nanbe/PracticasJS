@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+</head>
+<body>
+	
+	<script>
+		var nota1;
+		var nota2;
+		var nota3;
+		var promedio;
+		var suma;
+		
+		//pide valor para almacenarlo en la variable nota1
+		nota1 = prompt('Ingresa la primera calificación' , '');
+		//pasa a entero la nota1 ingresada
+		nota1 = parseInt(nota1);
+		nota2 = prompt('Ingresa la segunda calificación' , '');
+		nota2 = parseInt(nota2);
+		nota3 = prompt('Ingresa la tercera calificación' , '');
+		nota3 = parseInt(nota3);
+		
+		suma = nota1 + nota2 + nota3;
+		promedio = suma/3;
+		
+		//Si promedio es mayor o igual a 7 imprime el mensaje de aprobado.
+		if (promedio>=7)
+		{
+			document.write ('Aprobado');
+		}
+		
+		
+	</script>
+	
+
+
+</body>
+</html>

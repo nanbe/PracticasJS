@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Números decimales</title>
+</head>
+<body>
+	<script>
+		/*
+		Se ingresa por teclado un nuemro positivo de uno o dos digitos (1 al 99)
+		mostrar un mensaje indicando si el numero tiene uno o 2 digitos.
+		
+		Tener en cuenta que condicion debe cumplise para tener dos digitos (un numero entero).
+		*/
+		var num;
+		
+		num = prompt('Ingresa un número' , '');
+		num = parseInt(num);
+		
+		if (num<=9)
+		{
+			document.write('Tiene un número');
+		}
+		
+		else 
+		{
+			document.write('Tiene dos números');
+		}
+	</script>
+</body>
+</html>

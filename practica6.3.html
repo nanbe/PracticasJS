@@ -1,0 +1,41 @@
+<script>
+</script><!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Coordenadas</title>
+</head>
+<body>
+	<script>
+		var x;
+		var y;
+		
+		x =prompt('Ingresa el valor para la cooredenada x' , '');
+		y =prompt('Ingresa el valor para la cooredenada y' , '');
+		
+		if(x==0 && y==0)
+		{
+			document.write('No pertenecen a ningun cuadrante');
+		}
+		else if(x>=0 && y>=0)	
+			{
+				document.write('Las coordenadas pertenecen al primer cuadrante');
+			}
+		
+		else if(x<=0 && y>=0)	
+			{
+				document.write('Las coordenadas pertenecen al segundo cuadrante');
+			}
+		else if(x<=0 && y<=0)
+			{
+				document.write('Las coordenadas pertenecen al tercer cuadrante');
+			}
+		else if(x>=0 && y<=0)
+			{
+				document.write('Las coordenadas pertenecen al cuarto cuadrante');
+			}
+	</script>
+
+
+</body>
+</html>
